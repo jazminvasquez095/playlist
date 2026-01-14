@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(161, 63, 62);
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin:50px;
+}
+h1{
+  text-align: center;
+     font-family: "Madimi One", sans-serif;
+}
+p {
+  text-align: center;
+}
