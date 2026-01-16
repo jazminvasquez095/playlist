@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="script.js">
+      <link rel="stylesheet" href="movies-2020s.json">
       <style>
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Gravitas+One&family=Madimi+One&family=Quicksand:wght@300..700&display=swap');
 </style>
-    <title>Document</title>
-</head>
+<body>
 <h1>MOVIES IN 2020</h1>
 <p>
 <input placeholder="search">
 </p>
+<form id="settings-form">
+  <label>Publisher:
+    <input type="text" id="Publisher" autofocus required maxlength="15">
+  </label><br><br>
+
+ <form id="settings-form">
+  <label>Cast:
+    <input type="text" id="Publisher" autofocus required maxlength="15">
+  </label><br><br>
+
+  <label>Save Settings:
+    <select id="storage-choice">
+      <option value="local">Save Forever (Local Storage)</option>
+      <option value="session">Save Until Tab Closes (Session Storage)</option>
+    </select>
+  </label><br><br>
+
+  <button type="submit">Save</button>
+</form>
 <div class="grid-container"></div>
+
 <script src="script.js"></script>
 
-    
+
+
+   </head> 
 </body> 
 </html>

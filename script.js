@@ -15,10 +15,8 @@ xhttp.onreadystatechange = function() {
             let textData =
                 "<div class='movietitle'>" + movie.title + "</div>" +
                 "<span>" +
-                "Publisher:" + movie.publisher + "<br>" +
-                "Release Date:" + movie.releaseDate + "<br>" +
-                "Needs Research:" +
-                "</span>";
+                "Genres:" + movie.genres + "<br>" +
+                "Cast:" + movie.cast;
             card.innerHTML = textData;
 
             if (movie.imgSrc) {
@@ -29,5 +27,26 @@ xhttp.onreadystatechange = function() {
     }
 };
 
-xhttp.open("GET", "moviedata.json", true);
+xhttp.open("GET", "movies-2020s.json", true);
 xhttp.send();
+
+let usernameInput = document.getElementById("username");
+let colorThemeInput = document.getElementById("theme-color");
+let storageLocationInput = document.getElementById("storage-choice");
+//you will need to store the .value of variables above into new variables made below
+const settingsForm = document.querySelector("#settings-form");
+const saveButton = document.getElementsByTagName("button");
+
+console.log(usernameInput);
+console.log(colorThemeInput);
+console.log(storageLocationInput);
+console.log(settingsForm);
+console.log(saveButton);
+
+settingsForm.addEventListener("submit",function(e){
+  e.preventDefault();
+  
+  let usernameInput = inputVariableusernameinput .value;
+  let themecolorInput = inputVariablethemecolorinput.value;
+  let savesettingsInput = inputVariablesavesettingsinput.value;
+})
